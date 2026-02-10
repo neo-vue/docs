@@ -12,11 +12,11 @@
           <p>
             To install Neo VUE, run the following command:
           </p>
-          <pre class="mb-10"><DocCode value="npm install neo-vue" lang="bash" theme="light" /></pre>
+          <pre class="mb-10"><DocCode value="npm install @neo-vue/neo-ui" lang="bash" theme="light" /></pre>
           <p class="mb-10">
             Or if you prefer yarn:
           </p>
-          <pre class="mb-10"><DocCode value="yarn add neo-vue" lang="bash" theme="light" /></pre>
+          <pre class="mb-10"><DocCode value="yarn add @neo-vue/neo-ui" lang="bash" theme="light" /></pre>
         </div>
       </div>
 
