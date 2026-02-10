@@ -19,6 +19,7 @@ export default ({mode}) => {
       outDir: './docs',
       emptyOutDir: true, // also necessary
     },
+    base: "https://neo-vue.github.io/docs/",
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url))
