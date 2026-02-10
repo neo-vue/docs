@@ -44,6 +44,7 @@ import { getCurrentInstance } from 'vue';
 
 const codeInstall = `import { createApp } from 'vue';
 import NeoVue from '@neo-vue/neo-ui';
+import '@neo-vue/neo-ui/lib/neo-vue.css';
 import App from './App.vue';
 
 const app = createApp(App);
