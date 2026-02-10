@@ -15,6 +15,10 @@ export default ({mode}) => {
       })
     ],
     define: { 'process.env': {} },
+    build: {
+      outDir: './docs',
+      emptyOutDir: true, // also necessary
+    },
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url))
