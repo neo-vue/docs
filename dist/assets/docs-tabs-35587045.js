@@ -1,0 +1,17 @@
+import{_ as c}from"./doc-props-table.vue_vue_type_style_index_0_lang-a1eb0a5b.js";import{_ as u}from"./doc-slots-table.vue_vue_type_script_setup_true_lang-3a8bedb8.js";import{d as f}from"./constants-bb4d541a.js";import{D as b}from"./doc-example-8f7b0028.js";import{d as v,b as y,r as i,o as _,f as k,h as t,i as h,g as s,w as o}from"./index-62612c1a.js";import"./doc-code.vue_vue_type_style_index_0_lang-411331fc.js";const g={class:"section"},P={class:"content"},w={class:"subsection"},x={class:"content"},T={class:"d-flex flex-wrap justify-center mt-5 gap-15"},B={class:"subsection"},N={class:"content"},V={class:"subsection"},S={class:"content"},q=`<neo-tabs v-model="model" :options="options">
+  <template #users>
+    <neo-table
+      :headers="[{title: 'First name', key: 'firstname'}, {title: 'Last name', key: 'lastname'}]"
+      :items="[{firstname: 'John', lastname: 'Doe'}, {firstname: 'Foo', lastname: 'Bar'}]"
+    />
+  </template>
+  <template #products>
+    <neo-table
+      :headers="[{title: 'Name', key: 'name'}, {title: 'Price', key: 'price'}]"
+      :items="[{name: 'Pen', price: '0.80 €'}, {name: 'Pineapple', price: '1.50 €'}, {name: 'Pen-apple', price: '2.30 €'}]"
+    />
+  </template>
+</neo-tabs>`,C=`const options = [
+  { key: 'users', value: 'Users' },
+  { key: 'products', value: 'Products' }
+];`,L=v({__name:"docs-tabs",setup(j){const n=y("users"),l=[{key:"users",value:"Users"},{key:"products",value:"Products"}],r=[{name:"modelValue",description:"The current tab key selected",type:["String","Number"],default:"null",required:!1},{name:"options",description:"The tabs options",type:["[Object]"],default:"null",required:!0},{name:"activeBackgroundColor",description:"The active tab background color",type:["String"],default:"null",required:!1},{name:"activeColor",description:"The active tab color",type:["String"],default:"null",required:!1},{name:"headerPosition",description:"The header position",type:["String"],default:"left",required:!1},...f],p=[{name:"header",description:"The header slot",props:["option: Object, show: boolean, open: () => void"]}];return(D,e)=>{const a=i("neo-table"),m=i("neo-tabs");return _(),k("div",g,[e[8]||(e[8]=t("div",{class:"title"},"Tabs",-1)),t("div",P,[e[7]||(e[7]=t("p",null,[t("strong",null,"Neo-tabs"),h(" is a multiple tabs component to show subviews at same time.")],-1)),t("div",w,[e[2]||(e[2]=t("div",{class:"title"},"Basic",-1)),t("div",x,[e[1]||(e[1]=t("p",null,"You can use natively neo-tabs in your template. Here is an example :",-1)),s(b,{"code-snippets":[{code:C,lang:"js"},{code:q,lang:"html"}]},{default:o(()=>[t("div",T,[s(m,{modelValue:n.value,"onUpdate:modelValue":e[0]||(e[0]=d=>n.value=d),options:l},{users:o(()=>[s(a,{headers:[{title:"First name",key:"firstname"},{title:"Last name",key:"lastname"}],items:[{firstname:"John",lastname:"Doe"},{firstname:"Foo",lastname:"Bar"}]})]),products:o(()=>[s(a,{headers:[{title:"Name",key:"name"},{title:"Price",key:"price"}],items:[{name:"Pen",price:"0.80 €"},{name:"Pineapple",price:"1.50 €"},{name:"Pen-apple",price:"2.30 €"}]})]),_:1},8,["modelValue"])])]),_:1},8,["code-snippets"])])]),t("div",B,[e[4]||(e[4]=t("div",{class:"title"},"Props",-1)),t("div",N,[e[3]||(e[3]=t("p",null,"You can use the following props to customize your tabs:",-1)),s(c,{items:r})])]),t("div",V,[e[6]||(e[6]=t("div",{class:"title"},"Slots",-1)),t("div",S,[e[5]||(e[5]=t("p",null,"You can use the following slots to customize your tabs:",-1)),s(u,{items:p})])])])])}}});export{L as default};
